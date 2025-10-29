@@ -48,7 +48,7 @@ public:
         return true;
     }
     bool write_file(std::string &str){
-        std::ofstream file(str);
+        std::ofstream file("end"+str);
         if (!file.is_open()){
             return false;
         }
